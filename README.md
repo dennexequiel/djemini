@@ -6,7 +6,7 @@ Automatically categorizes your YouTube Music library by mood, genre, and energy,
 
 All local. No cloud database. Your data stays on your machine.
 
----
+![djemini CLI](.github/assets/djemini.png)
 
 ## Quick Start
 
@@ -76,7 +76,6 @@ bun start
 
 Follow the interactive prompts to authenticate and start organizing your music.
 
----
 
 ## How It Works
 
@@ -94,7 +93,6 @@ Five commands to organize your entire library:
 
 Each song gets categorized with confidence scores. AI suggests playlists like "Workout," "Late Night," "Study" based on your library.
 
----
 
 ## Commands
 
@@ -119,7 +117,6 @@ Each song gets categorized with confidence scores. AI suggests playlists like "W
 | `clear` | Clear screen |
 | `exit` | Exit CLI |
 
----
 
 ## Features
 
@@ -131,7 +128,6 @@ Each song gets categorized with confidence scores. AI suggests playlists like "W
 - **No buzzwords** - Simple playlist names ("Workout," "Study," "Chill")
 - **Fast sync** - Only fetches new songs after initial sync
 
----
 
 ## Data Storage
 
@@ -141,7 +137,6 @@ Everything in `data/` folder (gitignored):
 
 **Tables:** sources, songs, categories, playlists, playlist_songs
 
----
 
 ## Project Structure
 
@@ -159,7 +154,6 @@ djemini/
 └── .env              # API keys (gitignored)
 ```
 
----
 
 ## Development
 
@@ -172,7 +166,6 @@ bun run format:check        # Check formatting
 
 See [`AGENTS.md`](./AGENTS.md) for architecture, database schema, and code guidelines.
 
----
 
 ## Troubleshooting
 
@@ -186,7 +179,6 @@ See [`AGENTS.md`](./AGENTS.md) for architecture, database schema, and code guide
 
 **Clear playlists** - Run `playlists clear` or use SQL: `DELETE FROM playlists; DELETE FROM playlist_songs;`
 
----
 
 ## Tips
 
@@ -195,19 +187,16 @@ See [`AGENTS.md`](./AGENTS.md) for architecture, database schema, and code guide
 - Use `playlists` to preview before pushing to YouTube
 - Don't like suggestions? Run `create` again for new ones
 
----
 
 ## Contributing
 
 PRs welcome! Read `AGENTS.md`, run `bun run format`, ensure `bunx tsc --noEmit` passes.
 
----
 
 ## License
 
 MIT
 
----
 
 ## Credits
 
@@ -217,6 +206,5 @@ MIT
 - [Inquirer](https://github.com/SBoudrias/Inquirer.js) - CLI prompts
 - [Chalk](https://github.com/chalk/chalk) - Terminal colors
 
----
 
 Made by someone tired of scrolling through 2,000+ unsorted songs.
