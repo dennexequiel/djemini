@@ -1,0 +1,22 @@
+# Environment variables (sensitive API keys)
+.env
+.env.local
+.env.*.local
+
+# User data (database and OAuth tokens - SENSITIVE)
+data/
+
+# Dependencies
+node_modules/
+
+# IDE files
+.idea/
+.vscode/
+.cursor/
+
+# OS files
+.DS_Store
+
+# Bun cache
+.cache/
+
