@@ -6,7 +6,24 @@ Automatically categorizes your YouTube Music library by mood, genre, and energy,
 
 All local. No cloud database. Your data stays on your machine.
 
-![djemini CLI](.github/assets/djemini.png)
+<p align="center">
+  <img src=".github/assets/djemini.png" alt="djemini CLI" width="600">
+</p>
+
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [How It Works](#how-it-works)
+- [Commands](#commands)
+- [Features](#features)
+- [Data Storage](#data-storage)
+- [Project Structure](#project-structure)
+- [Development](#development)
+- [Troubleshooting](#troubleshooting)
+- [Tips](#tips)
+- [Contributing](#contributing)
+- [License](#license)
+- [Credits](#credits)
 
 ## Quick Start
 
@@ -32,32 +49,32 @@ All local. No cloud database. Your data stays on your machine.
 
 ### Configuration
 
-#### 1. Get Google OAuth Credentials
+**1. Get Google OAuth Credentials**
 
 For YouTube API access:
 
-1. Go to [Google Cloud Console](https://console.cloud.google.com)
-2. Create a new project (or select existing one)
-3. Enable **YouTube Data API v3**
-   - Navigate to "APIs & Services" → "Library"
-   - Search for "YouTube Data API v3"
-   - Click "Enable"
-4. Create OAuth 2.0 credentials
-   - Go to "APIs & Services" → "Credentials"
-   - Click "Create Credentials" → "OAuth 2.0 Client ID"
-   - Choose "Desktop app" as application type
-   - Set authorized redirect URI: `http://localhost:3000/oauth2callback`
-5. Copy your **Client ID** and **Client Secret**
+- Go to [Google Cloud Console](https://console.cloud.google.com)
+- Create a new project (or select existing one)
+- Enable **YouTube Data API v3**
+  - Navigate to "APIs & Services" → "Library"
+  - Search for "YouTube Data API v3"
+  - Click "Enable"
+- Create OAuth 2.0 credentials
+  - Go to "APIs & Services" → "Credentials"
+  - Click "Create Credentials" → "OAuth 2.0 Client ID"
+  - Choose "Desktop app" as application type
+  - Set authorized redirect URI: `http://localhost:3000/oauth2callback`
+- Copy your **Client ID** and **Client Secret**
 
-#### 2. Get Gemini API Key
+**2. Get Gemini API Key**
 
 For AI categorization:
 
-1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
-2. Click "Create API Key"
-3. Copy the generated key
+- Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+- Click "Create API Key"
+- Copy the generated key
 
-#### 3. Update Your `.env` File
+**3. Update Your `.env` File**
 
 Open `.env` and add your credentials:
 
@@ -195,7 +212,7 @@ PRs welcome! Read `AGENTS.md`, run `bun run format`, ensure `bunx tsc --noEmit` 
 
 ## License
 
-MIT
+[MIT License](./LICENSE)
 
 
 ## Credits
