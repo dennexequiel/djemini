@@ -16,7 +16,6 @@
 - [Git Guidelines](#git-guidelines)
 - [Troubleshooting](#troubleshooting)
 
----
 
 ## Project Overview
 
@@ -36,7 +35,6 @@ CLI tool that organizes YouTube Music libraries using AI. Fetches songs, categor
 - Push playlists to YouTube Music
 - Quota-aware API usage
 
----
 
 ## Quick Start
 
@@ -54,7 +52,6 @@ bun start
 auth → sources discover → sync → analyze → create → push
 ```
 
----
 
 ## Project Structure
 
@@ -94,7 +91,6 @@ djemini/
 └── README.md
 ```
 
----
 
 ## Build & Test Commands
 
@@ -106,7 +102,6 @@ bunx tsc --noEmit      # Type check
 
 **Pre-commit:** Format → Type check → Manual test → Verify no .env or data/ staged
 
----
 
 ## Code Style Guidelines
 
@@ -157,7 +152,6 @@ try {
 }
 ```
 
----
 
 ## Architecture & Design
 
@@ -178,13 +172,11 @@ try {
 **Quota Management:** Batch AI requests (20 songs/request), skip processed songs, graceful error handling
 4. Stop immediately on quota errors
 
----
 
 ## Database Schema
 
 See `src/db/schema.ts` for complete table definitions and indexes.
 
----
 
 ## Key Workflows
 
@@ -223,7 +215,6 @@ Create playlist on YouTube → Add songs (expensive!) → Save ID
 If exists: Skip (user must run playlists clear to update)
 ```
 
----
 
 ## Security Considerations
 
@@ -263,7 +254,6 @@ If exists: Skip (user must run playlists clear to update)
 - Gemini API: No hard limit but monitor costs
 - Implement delays between batch requests (avoid rate limit bans)
 
----
 
 ## Common Patterns
 
@@ -313,7 +303,6 @@ logger.error('Failed');              // Errors
 logger.dim('Hint: run status');      // Instructions
 ```
 
----
 
 ## Git Guidelines
 
@@ -342,7 +331,6 @@ bun start                  # Test manually
 git status                 # Verify no .env or data/
 ```
 
----
 
 ## Troubleshooting
 
@@ -356,7 +344,6 @@ git status                 # Verify no .env or data/
 
 **Keyboard unresponsive** → Restart app
 
----
 
 ## Additional Resources
 
@@ -366,6 +353,5 @@ git status                 # Verify no .env or data/
 
 **API Setup:** See README.md
 
----
 
 **Last Updated:** 2026-02-07
